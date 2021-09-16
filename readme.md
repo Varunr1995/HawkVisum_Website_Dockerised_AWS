@@ -1,7 +1,6 @@
 # Basic Template Structure & Working 
 [![License](https://img.shields.io/github/license/cicirello/pyaction)](https://github.com/cicirello/pyaction/blob/master/LICENSE) 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cicirello/pyaction?logo=github)](https://github.com/cicirello/pyaction/releases)
-[![pipeline status](https://gitlab.com/Varunr1995/hawkvisum_website_dockerised/badges/main/pipeline.svg)](https://gitlab.com/Varunr1995/hawkvisum_website_dockerised/-/commits/main)
 
 # AWS IAM USER
 
