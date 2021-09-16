@@ -1,0 +1,334 @@
+{% load static %} {% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Industries</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- fevicon -->
+    <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+    <!-- Industries Scrollbar -->
+    <link rel="stylesheet" href="{% static 'css/industries_types.css' %}">
+    <link rel="stylesheet" href="{% static 'css/industries.css' %}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+
+    <!-- header -->
+    <div class="industries-nav-bar" style="margin-bottom:-17px">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+          <i class="fa fa-bars"></i>
+        </label>
+            <a href="#"><img id="logo_img" src="{% static 'images/comp_logo.png'%}"></a>
+            <label class="logo">HawkVisum</label>
+            <ul>
+                <li> <a href="{% url 'homepage' %}" target="_blank_">Home</a> </li>
+                <li> <a class="active" href="{% url 'industriespage' %}" target="_blank_">Industries</a> </li>
+                <li> <a href="{% url 'aboutpage' %}" target="_blank_">About </a> </li>
+                <li> <a href="{% url 'contactpage' %}" target="_blank_">Contact</a> </li>
+                <li> <a href="{% url 'blogpage' %}" target="_blank_">Blog</a> </li>
+            </ul>
+        </nav>
+    </div>
+    <hr style="border: 3px solid #eded9a">
+    <!-- Header End -->
+
+    <!-- Build World Start -->
+    <div class="build-world-bg" style="background: #7aa39c; margin-bottom:70px; margin-top:-17px; margin-bottom:-17px">
+        <br>
+        <br>
+        <div class="build-world" style="font-family: 'Times New Roman', Times, serif; margin-left:100px;color:white">
+            <h1 style="font-size:40px; color:white; font-weight: bold;">ALL-IN-ONE
+                <h1>
+                    <h1 style="font-size:40px; color:white; font-weight: bold;">ONE FOR ALL</h1>
+                    <h1> A World of Experiences </h1>
+                    <div class="industrial_digital_mobile_align">
+                        <div class="industries_digital"><img src="{% static 'images/industries_merged.jpg' %}" width=450; height=333;></div>
+                    </div>
+                    <div class="industries_content">
+                        <p>
+                            Today, every organization need a trusted digital assistant that makes it to adapt and transform without unnecessary disruption. Learn how the digital infrastructure and application solutions of HawkVisum help you build, run, manage, and visualise, anywhere.
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+        </div>
+    </div>
+
+    <!-- Build World End -->
+
+    <hr style="border: 3px solid #eded9a">
+
+    <!-- Industries Start -->
+    <div class="industries" style="margin-top:-17px; margin-bottom:-17px">
+        <div class="slider">
+            <div class="slide current">
+                <div class="content" style="cursor: pointer;">
+                    <a href="{% url 'blogpage' %}" target="_blank_">
+                        <h1>Education</h1>
+                    </a>
+
+                    <p style="text-align: justify">
+                        Virtual experiences have the power to engage and inspire students in a unique and powerful way. Virtual reality provides students an opportunity to learn through experience, in contrast to the traditional methods of reading and writing. The immersive
+                        experience that Virtual Reality provides is unparalleled in teaching. Students are “transported” out of the classroom and their imagination is allowed to flourish.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Automobile Engineering</h1>
+                    <p style="text-align: justify">
+                        Enables users to interact freely with three-dimensional objects within virtual environments through special hardware. Virtual reality opens even broader opportunities for vehicle manufacturers. The most talented car designers from all over the world can
+                        work together on the same mock-up while physically being located on different continents. The design process requires continuous improvement, reviews, and testing, which is time consuming and heavy investment. Implementing Virtual
+                        Reality in automobile sector will help the companies to increase their productivity as time invested for model development will be reduced.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Health & Life Sciences</h1>
+                    <p style="text-align: justify">
+                        This technology allows them to practice complex, life-saving procedures in a risk-free environment, improve their skills, and get usability feedback during the process. Today, Virtual Reality is also making inroads in nursing. Cognitive distraction methods
+                        have been used by physicians to treat different types of pain for a long time now. Virtual Reality provides a new face to these distraction methods by providing various interactive games. therapeutic Virtual Reality for burn victims.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Construction & Civil Engineering</h1>
+                    <p style="text-align: justify">
+                        Helps in visualising the sketch and check its every corner even before the foundation is laid. Can recreate objects in a 3D environment using CAD software and Building Information Modeling (BIM). However, computer-generated details do not provide the
+                        full experience of a completed building. Hence, an issue might arise where the client’s vision of the project does not match the designer’s The two major advantages of Virtual Reality in construction are "Investment" & No more
+                        “it does not look like I imagined” phrases.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Industrial</h1>
+                    <p style="text-align: justify">
+                        Can speed the onboarding of new workers and improve worker productivity by offering more immersive on-the-job training. Holographic vision, graphics, voice and text can visually guide a worker, step by step, through assembly or maintenance tasks. All
+                        that's needed for the worker to complete a repair. Used for factory floor planning and manufacturing trade events. In mass-production manufacturing, factory planning – where to place tools, equipment and personnel – is crucial
+                        for productivity and efficiency. Virtual technologies can simplify and significantly shorten the process of altering or impleting new unit. Virtual plants can be designed to test production flows and how workers and robots perform
+                        tasks before changes are made in the physical world.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Interior Designing</h1>
+                    <p style="text-align: justify">
+                        Virtual Reality can be a time-saver in the initial stages of a project. Showing clients a design this way can avoid the need for lengthy explanations as part of a presentation because they can actually see what you’re talking about. Allows the client
+                        to more easily bring their professional experience into play, checking designs with optimum efficiency. Advantageous when you’re working with other professionals on a major project. With all parties able to get together virtually,
+                        fewer meetings and quicker decision-making can be the results.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Gaming</h1>
+                    <p style="text-align: justify">
+                        Virtual Reality can be a time-saver in the initial stages of a project. Showing clients a design this way can avoid the need for lengthy explanations as part of a presentation because they can actually see what you’re talking about. Allows the client
+                        to more easily bring their professional experience into play, checking designs with optimum efficiency. Advantageous when you’re working with other professionals on a major project. With all parties able to get together virtually,
+                        fewer meetings and quicker decision-making can be the results.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <!-- Industries End -->
+    <hr style="border: 3px solid #eded9a">
+    <!-- Ready To take next step -->
+    <div class="next_step" style="background-color:#bedbeb;
+                                margin-top: -17px;
+                                margin-bottom: -17px;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="margin-left: 40px; font-family: Arial, Helvetica, sans-serif; font-size:40px; text-align: center; color: white">
+            Ready to take next step!
+        </h2>
+        <div class="data_next_step" style="text-align: center;">
+            <div class="ready_button"><a href="{% url 'industriespage' %}" style="color: white"> Test Drive a Product</a></div>
+            <div class="ready_button ready_button_1"><a href="{% url 'contactpage' %}" style="color: white"> Contact Us </a></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- ready to take next step -->
+
+    <!-- ready to take next step -->
+    <hr style="border: 3px solid #eded9a">
+
+    <!-- Newsletter -->
+
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title_container_2">
+                        <div class="section_title" style="font-size:150% color: #6b5ebf">
+                            <h1>Our Newsletter</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row newsletter_row">
+                <!-- Newsletter Content -->
+                <div class="col-lg-6">
+                    <div class="newsletter_content">
+                        <div class="newsletter_text">
+                            <p>Subscribe our newsletter to get more details and updates on weekly.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Newsletter Form -->
+                <div class="col-lg-6 newsletter_col">
+                    <form action="#" class="newsletter_form" id="newsletter_form">
+                        <input type="email" class="newsletter_input" placeholder="Your email" required="required">
+                        <button class="newsletter_button">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer" style="margin-top:-17px">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">HawkVisum</h2>
+
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            <a class="text-decoration-none">Bangalore</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" style="color:white" href="tel:Contact Number">+919642560052</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" style="color:white" href="mailto:info@company.com">info@hawkvisum.com</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Industries</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" style="color:white" href="#">Education</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Automobile</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Health</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Construction</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Industrial</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Interior Designing</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Gaming</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'homepage' %}">Home</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'aboutpage' %}">About Us</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'blogpage' %}">Blog</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'faqpage' %}">FAQ's</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'careerspage' %}">Careers</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'contactpage' %}">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                    <ul class="social_link">
+                        <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align: center; color: white;">Copyright &copy; 2021 HawkVisum, Inc.</p>
+
+        <div class="policies" style="color: white">
+            <a href="{% url 'privacypage' %}" target="_blank_">Privacy Policy</a>
+            <a href="{% url 'termspage' %}" target="_blank_">Terms of Use</a>
+        </div>
+        <br>
+        <br>
+
+    </footer>
+    <!-- End Footer -->
+    <!-- Javascript files-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'js/plugin.js' %}"></script>
+    <!-- Industries Slider -->
+    <script src="{% static 'js/industries_types.js' %}"></script>
+    <!-- sidebar -->
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+</body>
+
+</html>

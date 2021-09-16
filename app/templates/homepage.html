@@ -1,0 +1,511 @@
+{% load static %} {% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Home</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- fevicon -->
+    <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- style css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+
+    <!-- header -->
+    <div class="header-top" style="background-image: url({% static 'images/home_1.jpeg' %}); height: calc(100vh - 80px);">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+          </label>
+            <a href="#"><img id="logo_img" src="{% static 'images/comp_logo.png'%}"></a>
+            <label class="logo">HawkVisum</label>
+            <ul>
+                <li> <a class="active" href="{% url 'homepage' %}" target="_blank_">Home</a> </li>
+                <li> <a href="{% url 'industriespage' %}" target="_blank_">Industries</a> </li>
+                <li> <a href="{% url 'aboutpage' %}" target="_blank_">About </a> </li>
+                <li> <a href="{% url 'contactpage' %}" target="_blank_">Contact</a> </li>
+                <li> <a href="{% url 'blogpage' %}" target="_blank_">Blog</a> </li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-bg">
+                    <br>
+                    <span>The Best</span>
+                    <h1>KEY TO THE FUTURE</h1>
+                    <p style="text-align: center; margin-left: 100px; margin-right:100px">See more holograms at once through the greatly increased field of view. Read text and see intricate details on 3D images more easily and comfortably with industry-leading resolution. Touch, grasp, and move holograms in ways that feel
+                        natural—they respond a lot like real objects. Voice commands through smart microphones and natural language speech processing let user to make work easier.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <!-- about -->
+
+    <div class="services" style="width: 100%;
+                                background-color: #fafafa;
+                                padding-top: 99px;
+                                padding-bottom: 102px;">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="section_title" style="font-size: 36px;
+                                            font-weight: 600;
+                                            color: #404040;
+                                            line-height: 0.75;">
+                        HawkVisum Solutions for Your Business Needs
+                    </div>
+                </div>
+            </div>
+            <div class="row icon_boxes_row" style="margin-top: 100px;">
+
+                <!-- Icon Box -->
+
+                <div class="col-xl-4 col-lg-6">
+                    <div class="icon_box" style="margin-bottom: 85px;">
+                        <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
+                            <div class="icon_box_icon" style="width: 49px; height: 49px;"><img src="{% static 'icon/education.png' %}" alt=""></div>
+                            <div class="icon_box_title" style="font-size: 20px;
+                                                  font-weight: 600;
+                                                  color: #404040;
+                                                  padding-left: 25px;">
+                                Education
+                            </div>
+                        </div>
+                        <div class="icon_box_text" style="font-size: 14px;
+                                              font-weight: 500;
+                                              color: #838383;
+                                              line-height: 2.14;
+                                              margin-top: 21px;
+                                              text-align: justify;
+                                              text-justify: inter-word;">
+                            VR allows students to experience destinations from across the world without ever having to leave the classroom. Imagine students being able to explore the pyramids of giza whilst sat at their desks. This is what virtual reality education allows.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icon Box -->
+
+                <div class="col-xl-4 col-lg-6">
+                    <div class="icon_box" style="margin-bottom: 85px;">
+                        <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
+                            <div class="icon_box_icon" style="width: 49px; height: 49px;"><img src="{% static 'icon/automobile.png' %}" alt=""></div>
+                            <div class="icon_box_title" style="font-size: 20px;
+                                                  font-weight: 600;
+                                                  color: #404040;
+                                                  padding-left: 25px;">
+                                Automobile
+                            </div>
+                        </div>
+                        <div class="icon_box_text" style="font-size: 14px;
+                                              font-weight: 500;
+                                              color: #838383;
+                                              line-height: 2.14;
+                                              margin-top: 21px;
+                                              text-align: justify;
+                                              text-justify: inter-word;">
+                            Enables manufacturers to test their cars under any weather conditions and in any location. Allows companies to use the immersive technology for different purposes while saving their financial resources on manufacturing and managing physical assets.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icon Box -->
+
+                <div class="col-xl-4 col-lg-6">
+                    <div class="icon_box" style="margin-bottom: 85px;">
+                        <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
+                            <div class="icon_box_icon" style="width: 49px; height: 49px;"><img src="{% static 'icon/healthsector.jpeg' %}" alt=""></div>
+                            <div class="icon_box_title" style="font-size: 20px;
+                                                  font-weight: 600;
+                                                  color: #404040;
+                                                  padding-left: 25px;">
+                                Health
+                            </div>
+                        </div>
+                        <div class="icon_box_text" style="font-size: 14px;
+                                              font-weight: 500;
+                                              color: #838383;
+                                              line-height: 2.14;
+                                              margin-top: 21px;
+                                              text-align: justify;
+                                              text-justify: inter-word;">
+                            Healthcare is one of the biggest adopters of VR, which encompasses robotic surgery, phobia treatment, surgery simulation, and skills training, to name a few. Many healthcare organizations across the globe have started making use of VR in their operations
+                            and have realized its benefits
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icon Box -->
+
+                <div class="col-xl-4 col-lg-6">
+                    <div class="icon_box" style="margin-bottom: 85px;">
+                        <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
+                            <div class="icon_box_icon" style="width: 49px; height: 49px;"><img src="{% static 'icon/construction.png' %}" alt=""></div>
+                            <div class="icon_box_title" style="font-size: 20px;
+                                                  font-weight: 600;
+                                                  color: #404040;
+                                                  padding-left: 25px;">
+                                Construction
+                            </div>
+                        </div>
+                        <div class="icon_box_text" style="font-size: 14px;
+                                              font-weight: 500;
+                                              color: #838383;
+                                              line-height: 2.14;
+                                              margin-top: 21px;
+                                              text-align: justify;
+                                              text-justify: inter-word;">
+                            BIM models and VR technologies can merge into a more interactive, immersive, and detailed virtual representation of a construction project. You can literally walk into a building that is yet to be erected. Helps in watching the building in exploded view.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icon Box -->
+
+                <div class="col-xl-4 col-lg-6">
+                    <div class="icon_box" style="margin-bottom: 85px;">
+                        <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
+                            <div class="icon_box_icon" style="width: 49px; height: 49px;"><img src="{% static 'icon/factories.png' %}" alt=""></div>
+                            <div class="icon_box_title" style="font-size: 20px;
+                                                  font-weight: 600;
+                                                  color: #404040;
+                                                  padding-left: 25px;">
+                                Industrial
+                            </div>
+                        </div>
+                        <div class="icon_box_text" style="font-size: 14px;
+                                              font-weight: 500;
+                                              color: #838383;
+                                              line-height: 2.14;
+                                              margin-top: 21px;
+                                              text-align: justify;
+                                              text-justify: inter-word;">
+                            Employee safety is essential when it comes to working in manufacturing. Virtual reality allows management to get a glimpse of specific issues of concern, making changes, and providing a safer work environment, without the risk of employee injury in the
+                            process.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Icon Box -->
+
+                <div class="col-xl-4 col-lg-6">
+                    <div class="icon_box" style="margin-bottom: 85px;">
+                        <div class="icon_box_title_container d-flex flex-row align-items-center justify-content-start">
+                            <div class="icon_box_icon" style="width: 49px; height: 49px;"><img src="{% static 'icon/interior_designing.png' %}" alt=""></div>
+                            <div class="icon_box_title" style="font-size: 20px;
+                                                  font-weight: 600;
+                                                  color: #404040;
+                                                  padding-left: 25px;">
+                                Interior Designing
+                            </div>
+                        </div>
+                        <div class="icon_box_text" style="font-size: 14px;
+                                              font-weight: 500;
+                                              color: #838383;
+                                              line-height: 2.14;
+                                              margin-top: 21px;
+                                              text-align: justify;
+                                              text-justify: inter-word;">
+                            VR can be a time-saver in the initial stages of a project. Showing clients a design this way can avoid the need for lengthy explanations as part of a presentation because they can actually see what you’re talking about, for smooth the process of design
+                            revision and feedback.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="btn btn-primary" href="{% url 'industriespage' %}" target="_blank_" role="button" style="margin-left:45%" target="_blank_">Read More</a>
+        </div>
+    </div>
+
+    <!-- end about -->
+
+
+    <!-- why HawkVisum -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size:60px; text-align: center;">
+        Why HawkVisum?
+    </h2>
+
+    <div class="content-width">
+        <div class="slideshow">
+            <!-- Slideshow Items -->
+            <div class="slideshow-items">
+                <div class="item">
+                    <div class="item-image-container">
+                        <img class="item-image" src="{% static 'images/why_1.jpeg' %}" />
+                    </div>
+                    <!-- Staggered Header Elements -->
+                    <div class="item-header">
+                        <span class="vertical-part" style="margin-top:130px; margin-left: 50px"><b>INNOVATION</b></span>
+                    </div>
+                    <!-- Staggered Description Elements -->
+                    <div class="item-description">
+                        <span class="vertical-part" style="color:black; 
+                                              font-family: 'Times New Roman', Times, serif; 
+                                              text-align: justify;
+                                              text-justify: inter-word;
+                                              ">
+                <b>
+                Build business resilience into the core of your organization with solutions for a future-ready workforce, future-ready apps, and future-ready infrastructure.
+                </b>
+            </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image-container">
+                        <img class="item-image" src="{% static 'images/why_2.jpeg' %}" />
+                    </div>
+                    <!-- Staggered Header Elements -->
+                    <div class="item-header">
+                        <span class="vertical-part" style="margin-top:130px; margin-left: 50px"><b>FUTURISTIC</b></span>
+                    </div>
+                    <!-- Staggered Description Elements -->
+                    <div class="item-description">
+                        <span class="vertical-part" style="color:black; 
+                                              font-family: 'Times New Roman', Times, serif; 
+                                              text-align: justify;
+                                              text-justify: inter-word;
+                                              ">
+              <b>Drive complexity out of your technology and prepare for the future with solutions that are engineered to give you the freedom to choose.</b>
+            </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image-container">
+                        <img class="item-image" src="{% static 'images/why_3.jpeg' %}" />
+                    </div>
+                    <!-- Staggered Header Elements -->
+                    <div class="item-header">
+                        <span class="vertical-part" style="margin-top:130px; margin-left: 50px"><b>TECHNOLOGY</b></span>
+                    </div>
+                    <!-- Staggered Description Elements -->
+                    <div class="item-description">
+                        <span class="vertical-part" style="color:black; 
+                                              font-family: 'Times New Roman', Times, serif; 
+                                              text-align: justify;
+                                              text-justify: inter-word;
+                                              ">
+              <b>Join with us to implement advanced technologies for your product developments to improve workability and performance, to build, run, manage, connect and develop.</b>
+            </span>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <ul>
+                    <li class="control" data-index="0"></li>
+                    <li class="control" data-index="1"></li>
+                    <li class="control" data-index="2"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!-- end why HawkVisum -->
+
+    <!-- Ready To take next step -->
+    <div class="next_step" style="background-color:#bedbeb">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="margin-left: 40px; font-family: Arial, Helvetica, sans-serif; font-size:40px; text-align: center; color: white">
+            Ready to take next step!
+        </h2>
+        <div class="data_next_step" style="text-align: center;">
+            <div class="ready_button"><a href="{% url 'industriespage' %}" style="color: white"> Test Drive a Product</a></div>
+            <div class="ready_button ready_button_1"><a href="{% url 'contactpage' %}" style="color: white"> Contact Us </a></div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- ready to take next step -->
+
+    <!-- Newsletter -->
+
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="section_title_container_2">
+                        <div class="section_title" style="font-size:150% color: #6b5ebf">
+                            <h1>Our Newsletter</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row newsletter_row">
+                <!-- Newsletter Content -->
+                <div class="col-lg-6">
+                    <div class="newsletter_content">
+                        <div class="newsletter_text">
+                            <p>Subscribe our newsletter to get more details and updates on weekly.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Newsletter Form -->
+                <div class="col-lg-6 newsletter_col">
+                    <form action="#" class="newsletter_form" id="newsletter_form">
+                        <input type="email" class="newsletter_input" placeholder="Your email" required="required">
+                        <button class="newsletter_button">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer" style="margin-top:-17px">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">HawkVisum</h2>
+
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            <a class="text-decoration-none">Bangalore</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" style="color:white" href="tel:+919642560052">+919642560052</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" style="color:white" href="mailto:info@hawkvisum.com">info@hawkvisum.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Industries</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" style="color:white" href="#">Education</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Automobile</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Health</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Construction</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Industrial</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Interior Designing</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="#">Gaming</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'homepage' %}">Home</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'aboutpage' %}">About Us</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'blogpage' %}">Blog</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'faqpage' %}">FAQ's</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'careerspage' %}">Careers</a></li>
+                        <li><a class="text-decoration-none" style="color:white" href="{% url 'contactpage' %}">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+                    <ul class="social_link">
+                        <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-square" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center; color: white;">Copyright &copy; 2021 HawkVisum, Inc.</p>
+
+        <div class="policies" style="color: white">
+            <a href="{% url 'privacypage' %}" target="_blank_">Privacy Policy</a>
+            <a href="{% url 'termspage' %}" target="_blank_">Terms of Use</a>
+        </div>
+
+        <br>
+        <br>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Javascript files-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'js/plugin.js' %}"></script>
+    <!-- sidebar -->
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/slideshow.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
+</body>
+
+</html>

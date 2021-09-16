@@ -1,0 +1,257 @@
+#logo_img {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+    float: left;
+    height: 60px;
+    width: auto; /* correct proportions to specified height */
+    border-radius: 50%; /* makes it a circle */
+  }
+  .ready_button {
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: transparent;
+    margin-top: 30px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius:15px;
+  }
+
+  .ready_button_1 {
+    margin-left:20px
+  }
+  
+  .image_heading{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 150%;
+    color: black !important;
+  }
+  .background_image
+  {
+    top: 0;
+    left: 0;
+    width:400px;
+    height:300px;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 10px;
+  }
+  .content_bg_shadow:hover{
+    box-shadow: 10px 10px 5px grey;
+  }
+  .newsletter
+  {
+    background: #FFFFFF;
+    padding-top: 95px;
+    padding-bottom: 90px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .newsletter_row
+  {
+    margin-top: 11px;
+  }
+  .newsletter_form
+  {
+    display: block;
+  }
+  .newsletter_input
+  {
+    width: 100%;
+    height: 52px;
+    border: solid 1px #dadfe5;
+    border-bottom: solid 2px #da8661;
+    outline: none;
+    padding-left: 25px;
+  }
+  .newsletter_button
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 151px;
+    height: 52px;
+    background: #637496;
+    z-index: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .newsletter_button::before
+  {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    content: '';
+    background: #da8661;
+    z-index: -1;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 400ms ease;
+  }
+  .newsletter_button:hover::before
+  {
+    width: 100%;
+  }
+  nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    margin-left: -90px
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;     
+  } 
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .industrial_digital_mobile_align{
+    margin-left:800px;
+    margin-top:-160px;
+  }
+  .industries_content p{
+    margin-right:600px; 
+    margin-top:-40px; 
+    text-align: justify; 
+    text-justify: inter-word;
+  }
+  .policies a{
+    color: white;
+    float: right;
+    margin-right: 40px;
+    margin-top: -23px;
+  }
+  .policies a hover{
+    background-color: transparent;
+  }
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+
+  /* Tablet Version */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .industries_content p{
+    
+    }
+    .industrial_digital_mobile_align{
+      margin-top:-18%;
+      margin-left:45%;
+    }
+    .next_step data_next_step{
+      margin-left:-50%;
+    }
+  }
+
+  /* Mobile Version Edits */
+  @media (max-width: 858px){
+    label.logo{
+     margin-left:-40px;
+    }
+    .checkbtn{
+      display: block;
+    }
+    .industries-nav-bar ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 30px 0;
+      line-height: 1px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .build-world-bg{
+      margin-left:-60px;
+    }
+    .build-world-bg p{
+      margin-top: -10px;
+    }
+    .industries_content{
+      margin-right:-150%;
+      margin-top:30%;
+    }
+    .industrial_digital_mobile_align{
+      margin-top:10%;
+      margin-left:-47px
+    }
+    .content .h1 {
+      width: 50%;
+      height: 50%;
+    }
+    .buttons button{
+      margin-top:100%;
+    }
+    .policies a{
+      color: white;
+      margin-top:20px;
+    }
+  }
